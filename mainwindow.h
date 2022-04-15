@@ -37,18 +37,7 @@ private:
 
     QSerialPort *serial;
     QByteArray tempdata = "0";
-    QByteArray Achor1;
-    QByteArray Achor2;
-    QByteArray Achor3;
-    QByteArray Achor4;
-protected:
-    QByteArray head;
-    QByteArray bagbuff;
-    QByteArray tail;
-    bool ok;
-    bool buffok;
-    bool bagok;
-    bool showok;
+
 };
 
 
