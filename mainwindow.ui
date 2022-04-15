@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>447</width>
+    <height>492</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="centralWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>360</width>
+      <height>385</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+font: 75 10pt &quot;Adobe Caslon Pro Bold&quot;;
+}
+
+QComboBox {
+        height: 25px;
+        border-radius: 4px;
+        border: 1px solid rgb(100, 100, 100);
+        background: rgb(72, 72, 73);
+}
+QComboBox:enabled {
+        color: rgb(175, 175, 175);
+}
+QComboBox:!enabled {
+        color: rgb(155, 155, 155);
+}
+QComboBox:enabled:hover, QComboBox:enabled:focus {
+        color: rgb(230, 230, 230);
+        background: rgb(68, 69, 73);
+}
+QComboBox::drop-down {
+        width: 20px;
+        border: none;
+        background: transparent;
+}
+QComboBox::drop-down:hover {
+        background: rgba(255, 255, 255, 30);
+}
+QComboBox::down-arrow {
+        image: url(:/Black/arrowBottom);
+}
+QComboBox::down-arrow:on {
+        /**top: 1px;**/
+}
+QComboBox QAbstractItemView {
+        border: 1px solid rgb(100, 100, 100);
+        background: rgb(68, 69, 73);
+        outline: none;
+}
+QComboBox QAbstractItemView::item {
+        height: 25px;
+        color: rgb(175, 175, 175);
+}
+QComboBox QAbstractItemView::item:selected {
+        background: rgba(255, 255, 255, 40);
+        color: rgb(230, 230, 230);
+}
+
+QPushButton{
+        border-radius: 4px;
+        border: none;
+        width: 75px;
+        height: 25px;
+}
+QPushButton:enabled {
+        background: rgb(68, 69, 73);
+        color: white;
+}
+QPushButton:!enabled {
+        background: rgb(100, 100, 100);
+        color: rgb(200, 200, 200);
+}
+QPushButton:enabled:hover{
+        background: rgb(85, 85, 85);
+}
+QPushButton:enabled:pressed{
+        background: rgb(80, 80, 80);
+}
+
+QPushButton#blueButton {
+        color: white;
+}
+QPushButton#blueButton:enabled {
+        background: rgb(0, 165, 235);
+        color: white;
+}
+QPushButton#blueButton:!enabled {
+        background: gray;
+        color: rgb(200, 200, 200);
+}
+QPushButton#blueButton:enabled:hover {
+        background: rgb(0, 180, 255);
+}
+QPushButton#blueButton:enabled:pressed {
+        background: rgb(0, 140, 215);
+}
+
+QPushButton#selectButton {
+        border: none;
+        border-radius: none;
+        border-left: 1px solid rgb(100, 100, 100);
+        image: url(:/Black/scan);
+        background: transparent;
+        color: white;
+}
+QPushButton#selectButton:enabled:hover{
+        background: rgb(85, 85, 85);
+}
+QPushButton#selectButton:enabled:pressed{
+        background: rgb(80, 80, 80);
+}
+
+QPushButton#linkButton {
+        background: transparent;
+        color: rgb(0, 160, 230);
+        text-align:left;
+}
+QPushButton#linkButton:hover {
+        color: rgb(20, 185, 255);
+        text-decoration: underline;
+}
+QPushButton#linkButton:pressed {
+        color: rgb(0, 160, 230);
+}
+
+QPushButton#transparentButton {
+        background: transparent;
+}
+QPushButton
+{
+    font-family:Microsoft Yahei;
+    color:white;
+    background-color:rgb(14 , 150 , 254);
+    border-radius:5px;
+}
+
+QPushButton:hover
+{
+    background-color:rgb(44 , 137 , 255);
+	
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(14 , 135 , 228);
+
+    padding-left:3px;
+    padding-top:3px;
+}
+
+QTextEdit {
+        border: 1px solid rgb(45, 45, 45);
+        color: rgb(175, 175, 175);
+        background: rgb(57, 58, 60);
+}
+
+QLineEdit {
+        border-radius: 4px;
+        height: 25px;
+        border: 1px solid rgb(100, 100, 100);
+        background: rgb(72, 72, 73);
+}
+QLineEdit:enabled {
+        color: rgb(175, 175, 175);
+}
+QLineEdit:enabled:hover, QLineEdit:enabled:focus {
+        color: rgb(230, 230, 230);
+}
+QLineEdit:!enabled {
+        color: rgb(155, 155, 155);
+}
+
+
+QRadioButton{
+
+}
+QProgressBar{
+        border: none;
+        color: rgb(68, 69, 73);
+        text-align: center;
+        background: rgb(68, 69, 73);
+}
+QProgressBar::chunk {
+        border: none;
+        background: rgb(0, 160, 230);
+}
+
+</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="3" column="0" rowspan="3" colspan="2">
+      <widget class="QTextEdit" name="textEdit_2"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QPushButton" name="clearButton">
+       <property name="text">
+        <string>清空接受</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QPushButton" name="sendButton">
+       <property name="text">
+        <string>发送数据</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QTextEdit" name="textEdit"/>
+     </item>
+     <item row="6" column="2">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>BY CROWNG</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2" rowspan="2">
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>串口选择：</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="PortBox"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>波特率：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="BaudBox">
+         <item>
+          <property name="text">
+           <string>4800</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>9600</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>19200</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>38400</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>57600</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>115200</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>数据位：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QComboBox" name="comboBox"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>停止位：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QComboBox" name="comboBox_2"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>奇偶校验：</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QComboBox" name="comboBox_3"/>
+       </item>
+      </layout>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="openButton">
+       <property name="text">
+        <string>打开串口</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>发送数据</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>数据接收</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>447</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
