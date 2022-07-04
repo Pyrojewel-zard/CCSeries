@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-
+//a little test
 namespace Ui {
 class MainWindow;
 }
